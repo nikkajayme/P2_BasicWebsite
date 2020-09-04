@@ -57,16 +57,16 @@ header ul {
     padding-left: 2%;
     padding-right: 20%;
     background-color: white;//#D2F1E4;
-    color: #1b1d1f;//#454d4d;
+    color: #272829;//#454d4d;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 13px;
 
     h3 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     h4 {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
  
@@ -177,44 +177,17 @@ footer {
     margin-left: 25%;
 }
 
-.species img {
-    width: 170px;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
+hr {
+    width: 100%;
+    height: .5px;
+    border-width: 0;
+    background-color: #d1d1d1;
+    margin-left: 0;
 }
 
-.species {
-    font-size: 12px;
-}
-
-figure {
-    margin: auto;
-    align-items: center;
-}
-figcaption {
-    margin-right: 16.5px;
-    margin-left: 16.5px;
-    margin-bottom: auto;
-    text-align: center;
-    color: #ffffff;
-    background-color: #566d68;
-}
-
-.column {
-
-    &1, &2, &3, &4 {
-        float: left;
-        width: 25%;
-        padding: 3px;
-        margin-bottom: 2px;
-        text-align: center;
-    }
-}
-
-.row1, .row2, .row3 {
-    display: flex;
-    width: 95%;
-    align-items: center;
-    margin-bottom: 4%;
+.breeding img {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
