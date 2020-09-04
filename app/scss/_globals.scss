@@ -1,18 +1,220 @@
-html {
-    font-size:100%;
-    box-sizing:border-box;
-}
-
-*, *::before, *::after {
-    box-sizing:inherit;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3;
-    margin: 0px;
-    padding: 0px;
-    background-color: #202020;
+
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav {
+    height: 9vh;
+    padding: 15px;
+    align-items: center;
+    background-color: #2D3047;
+}
+
+.flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+    //overflow: hidden;
+    z-index: 1;
+
+}
+
+.header {
+
+    &_logo {
+        text-decoration: none;
+        color: white;
+    }
+
+    &_menu li a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 17%;
+}
+
+.content {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 20%;
+    background-color: white;//#D2F1E4;
+    color: #1b1d1f;//#454d4d;
+    line-height: 1.6;
+    font-size: 14px;
+
+    h3 {
+        font-size: 23px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+}
+ 
+.sidebar {
+    font-size: 15px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #D2F1E4;//#edb458ff;
+    //overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 12vh;
+    padding-left: 2vh;
+    overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ol {
+        font-size: 85%;
+    }
+
+    li {
+        margin-bottom: 3px;
+    }
+}
+
+.sidebar li {
+    padding: 3px;
+    list-style-type: none;
+}
+
+.subtypes {
+    text-indent: 3%;
+}
+
+.bettas p{
+    text-indent: 50px;
+}
+
+.splendens {
+    float: none!important;
+}
+
+.splendens p{
+    text-indent: 5%;
+}
+
+.splendens ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+.care {
+    text-indent: 5%;
+}
+
+.pg {
+
+    &_tank, &_water, &_food {
+        text-indent: 5%;
+    }
+
+}
+
+.mates p {
+    text-indent: 5%;
+}
+
+.mates ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+.female p{
+    text-indent: 5%;
+}
+
+.breeding p {
+    text-indent: 5%;
+}
+
+.fry p {
+    text-indent: 5%;
+}
+
+.fry h5 {
+    font-size: 14px;
+}
+
+.fry ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+.diseases ul {
+    text-indent: 5%;
+    list-style-type: none;
+}
+
+footer {
+    color: black;
+    font-size: 10px;
+    margin-left: 25%;
+}
+
+.species img {
+    width: 170px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.species {
+    font-size: 12px;
+}
+
+figure {
+    margin: auto;
+    align-items: center;
+}
+figcaption {
+    margin-right: 16.5px;
+    margin-left: 16.5px;
+    margin-bottom: auto;
+    text-align: center;
     color: #ffffff;
-    
+    background-color: #566d68;
+}
+
+.column {
+
+    &1, &2, &3, &4 {
+        float: left;
+        width: 25%;
+        padding: 3px;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    margin-bottom: 4%;
 }
